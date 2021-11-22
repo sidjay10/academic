@@ -13,11 +13,7 @@
   position: relative;
 
   .site-header-float {
-<<<<<<< HEAD
-    min-height: 60px;
-=======
     min-height: 100px;
->>>>>>> 60afd77 (Updating Theme)
   }
 
   .lang-selector {
@@ -133,15 +129,9 @@
 
 .site-title {
   display: inline-block;
-<<<<<<< HEAD
-  font-size: 26px;
-  font-weight: 300;
-  line-height: 55px;
-=======
   font-size: 28px;
   font-weight: 250;
   line-height: 80px;
->>>>>>> 60afd77 (Updating Theme)
   letter-spacing: -1px;
   margin-bottom: -5px;
 
@@ -193,11 +183,7 @@
 
 .site-nav {
   float: right;
-<<<<<<< HEAD
-  line-height: 60px;
-=======
   line-height: 80px;
->>>>>>> 60afd77 (Updating Theme)
   z-index: 1000;
 
   .menu-icon {
@@ -361,13 +347,10 @@
     .username {
       display: none;
     }
-<<<<<<< HEAD
-=======
     
     .email {
       display: none;
     }
->>>>>>> 60afd77 (Updating Theme)
 
     svg {
       width: 20px;
@@ -393,13 +376,9 @@
     a .username:hover {
       text-decoration: underline;
     }
-<<<<<<< HEAD
-
-=======
  .email {
       display: inline;
     }
->>>>>>> 60afd77 (Updating Theme)
     @include media-query($on-palm) {
       margin-bottom: $spacing-unit / 2;
     }
@@ -497,15 +476,12 @@
       .username {
         display: inline;
       }
-<<<<<<< HEAD
-=======
       
       .email {
       display: inline;
       font-size:xx-small;
     }
 
->>>>>>> 60afd77 (Updating Theme)
     }
 
     .bottom {
@@ -523,10 +499,7 @@
 }
 
 .post-content {
-<<<<<<< HEAD
-=======
   // padding-top: 10px;
->>>>>>> 60afd77 (Updating Theme)
   padding-bottom: $spacing-unit;
 }
 
@@ -590,8 +563,6 @@
   }
 }
 
-<<<<<<< HEAD
-=======
 /* Edu */
 .edu-content {
   h2 {
@@ -622,7 +593,6 @@
   }
 }
 
->>>>>>> 60afd77 (Updating Theme)
 /**
  * Posts
  */
@@ -659,11 +629,7 @@
   .wrapper {
     background: rgba(255, 255, 255, 0.9);
     margin-top: $spacing-unit;
-<<<<<<< HEAD
-    padding-bottom: 0;
-=======
     padding-bottom: $spacing-unit;
->>>>>>> 60afd77 (Updating Theme)
     padding-top: 0;
 
     @include media-query($on-laptop) {
@@ -695,11 +661,7 @@
 
 .post-title {
   margin-top: 0;
-<<<<<<< HEAD
-  color: $brand-color;
-=======
  // color: $brand-color;
->>>>>>> 60afd77 (Updating Theme)
 }
 
 .post-summary {
@@ -707,13 +669,10 @@
 }
 
 .post-content {
-<<<<<<< HEAD
-=======
   .h2 {
     color: $brand-color
   }
 
->>>>>>> 60afd77 (Updating Theme)
   padding-bottom: $spacing-unit / 2;
 
   .footnotes {
@@ -797,25 +756,13 @@
   list-style: none;
   margin-left: 0;
   margin-top: $spacing-unit / 2;
-<<<<<<< HEAD
-  text-transform: lowercase;
-=======
 //  text-transform: lowercase;
       white-space:nowrap;
       font-size: $small-font-size;
->>>>>>> 60afd77 (Updating Theme)
 
   a:hover {
     text-decoration: none;
   }
-<<<<<<< HEAD
-}
-
-.user-picture {
-  border-radius: 50%;
-  max-width: calc(85%);
-}
-=======
  .email {
       display: inline;
       //font-size: medium;
@@ -826,50 +773,33 @@
 //   border-radius: 50%;
 //   max-width: calc(85%);
 // }
->>>>>>> 60afd77 (Updating Theme)
 
 .about-col-1 {
   @include size(vsmall);
   padding-right: $spacing-unit / 2;
-<<<<<<< HEAD
-  width: -webkit-calc(35% - (#{$spacing-unit} / 4));
-  width:         calc(35% - (#{$spacing-unit} / 4));
-=======
   width: -webkit-calc(30% - (#{$spacing-unit} / 4));
   width:         calc(30% - (#{$spacing-unit} / 4));
->>>>>>> 60afd77 (Updating Theme)
 
 
   .user-picture {
     margin-bottom: $spacing-unit / 2;
   }
 
-<<<<<<< HEAD
-=======
   // .txt-rotate {
   //     white-space:nowrap;
 
   // }
 
->>>>>>> 60afd77 (Updating Theme)
 }
 
 .about-col-2 {
   @include size(small);
-<<<<<<< HEAD
-  width: -webkit-calc(65% - (#{$spacing-unit} / 4));
-  width:         calc(65% - (#{$spacing-unit} / 4));
-
-  h1 {
-    margin-top: 0;
-=======
   width: -webkit-calc(70% - (#{$spacing-unit} / 4));
   width:         calc(70% - (#{$spacing-unit} / 4));
 
   h1,h3,h4 {
     margin-top: 0;
     padding-bottom: $spacing-unit/2
->>>>>>> 60afd77 (Updating Theme)
   }
 }
 

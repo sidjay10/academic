@@ -3,16 +3,10 @@
   <div class="wrapper">
 
     <div class="site-header-float">
-<<<<<<< HEAD
-    {% include _i18n/sitetitle.html class=true %}
-    {% if site.pitch %}
-      <span class="site-pitch">{% include _i18n/i18n.html value=site.pitch %}</span>
-=======
     {% if site.pitch == null %}
     <a class="site-title" href="/index.html" %}">{{ site.title_html }}</a>
     {% else %}
     <a class="site-title-with-pitch" href="/index.html" %}">{{ site.title_html }}</a>
->>>>>>> 60afd77 (Updating Theme)
     {% endif %}
 
     {% if site.pitch == null %}
@@ -32,14 +26,6 @@
     {% endif %}
     </div>
 
-<<<<<<< HEAD
-    {% assign nblangs = site.langs | size %}
-    {% if nblangs > 1 %}
-      {% include _i18n/lang_selector.html %}
-    {% endif %}
-
-=======
->>>>>>> 60afd77 (Updating Theme)
   </div>
 
 </header>
