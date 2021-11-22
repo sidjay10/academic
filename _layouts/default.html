@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
+=======
+<!-- <html lang="{{ page.lang | default: site.langs[0] | default: "en" }}"> -->
+>>>>>>> 60afd77 (Updating Theme)
 <html lang="{{ page.lang | default: site.langs[0] | default: "en" }}">
 
   {% include head.html %}
@@ -9,6 +13,11 @@
 
     {% if page.layout == "post" %}
     <main class="post-content" aria-label="Content">
+<<<<<<< HEAD
+=======
+    {% else if page.layout == "edu" %}
+    <main class="edu-content" aria-label="Content">
+>>>>>>> 60afd77 (Updating Theme)
     {% else %}
     <main class="page-content" aria-label="Content">
     {% endif %}

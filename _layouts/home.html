@@ -11,7 +11,11 @@ layout: default
 
 <div class="{{ div_class }}">
   {% unless site.pitch %}
+<<<<<<< HEAD
   <p>{% include _i18n/i18n.html value=site.description %}</p>
+=======
+  <p>{{ site.description }}</p>
+>>>>>>> 60afd77 (Updating Theme)
   {% endunless %}
 
   {{ content }}
@@ -24,8 +28,13 @@ layout: default
 
   {% if nb_posts > site.nb_posts_page %}
   <div class="archive">
+<<<<<<< HEAD
     {{ site.data.academic_i18n.all_posts[plang][0] }}
     <a href="{% include _i18n/link.html path="archive" %}">{{ site.data.academic_i18n.all_posts[plang][1] }}</a>.</div>
+=======
+    {{ site.data.all_posts[0] }}
+    <a href="archive.html" %}">{{ site.data.all_posts[1] }}</a>.</div>
+>>>>>>> 60afd77 (Updating Theme)
   {% endif %}
 
 </div>

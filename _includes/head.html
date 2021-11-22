@@ -1,13 +1,22 @@
+<<<<<<< HEAD
 {% assign plang = page.lang | default: site.langs[0] | default: "en" %}
 <head>
   <meta charset="utf-8">
+=======
+<head>
+  <meta charset="UTF-8">
+>>>>>>> 60afd77 (Updating Theme)
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {% if page.seo.title %}
   <title>{{ page.seo.title }}</title>
   {% else %}
+<<<<<<< HEAD
   <title>{{ page.title | append: " | " | default:"" }}{% include _i18n/i18n.html value=site.title %}</title>
+=======
+  <title>{{ page.title | append: " | " | default:"" }}{{ site.title }}</title>
+>>>>>>> 60afd77 (Updating Theme)
   {% endif %}
 
   {% if page.seo.description %}
@@ -15,12 +24,19 @@
   {% elsif page.summary %}
   <meta name="description" content="{{ page.summary | truncate: 160 }}">
   {% else %}
+<<<<<<< HEAD
   <meta name="description" content="{% include _i18n/i18n.html value=site.description %}">
+=======
+  <meta name="description" content="{{ site.description }}">
+>>>>>>> 60afd77 (Updating Theme)
   {% endif %}
 
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+<<<<<<< HEAD
   <link rel="alternate" type="application/rss+xml" title="{% include _i18n/i18n.html value=site.title %}" href="{{ "/feed.xml" | relative_url }}">
+=======
+>>>>>>> 60afd77 (Updating Theme)
 
   {% capture favicons %}
   {% for file in site.static_files %}
@@ -51,6 +67,7 @@
 
   {% assign pagename = page.path | split:"." | first %}
 
+<<<<<<< HEAD
   {% if page.layout == "post" %}
     {% assign i18n_posts = site.posts | where_exp:"p","p.path contains pagename" %}
   {% else %}
@@ -71,6 +88,20 @@
   {% include piwik.html %}
   {% endif %}
 
+=======
+  {% if page.layout == "about" %} 
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ "/assets/js/app.js" | prepend: site.baseurl }}"></script>
+  <!-- {% else if page.layout == "post" %}
+    {% assign i18n_posts = site.posts | where_exp:"p","p.path contains pagename" %}
+  {% else %}
+    {% assign i18n_posts = site.pages | where_exp:"p","p.path contains pagename" %} -->
+  {% endif %}
+
+  {% if site.piwik %}
+  {% include piwik.html %}
+  {% endif %}
+>>>>>>> 60afd77 (Updating Theme)
   {% if jekyll.environment == 'production' %}
   {% endif %}
 </head>

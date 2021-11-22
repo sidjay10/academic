@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% assign plang = page.lang | default: site.langs[0] | default: "en" %}
 {% assign nblangs = site.langs | size %}
 <span class="nav-list-title">{{ site.data.academic_i18n.menu[plang] }}</span>
@@ -15,6 +16,13 @@
 {% else %}
   {% assign pages = site.pages %}
 {% endif %}
+=======
+<span class="nav-list-title">Menu</span>
+<ul class="nav-list {{ include.class }}">
+
+
+{% assign pages = site.pages %}
+>>>>>>> 60afd77 (Updating Theme)
 
 {% for my_page in pages %}
 {% unless my_page.invisible %}
@@ -23,4 +31,15 @@
   {% endif %}
 {% endunless %}
 {% endfor %}
+<<<<<<< HEAD
+=======
+
+{% for link in site.nav_ext_links %}
+  {% if link.url and link.name %}
+  <li><a target="_blank" class="page-link" href="{{ link.url }}">
+      {{ link.name }}
+  </a></li>
+  {% endif %}
+{% endfor %}
+>>>>>>> 60afd77 (Updating Theme)
 </ul>

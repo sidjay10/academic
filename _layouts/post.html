@@ -15,9 +15,15 @@ layout: default
       <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
       <p class="post-meta">
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+<<<<<<< HEAD
           {% include _i18n/date.html date=page.date %}
         </time>
         {% include _i18n/last_modified_at.html object=page %}
+=======
+          <!-- {% include _i18n/date.html date=page.date %} -->
+        </time>
+        <!-- {% include _i18n/last_modified_at.html object=page %} -->
+>>>>>>> 60afd77 (Updating Theme)
         {% if page.author %} • 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
         {% endif %}
@@ -35,7 +41,11 @@ layout: default
   {% if site.shortbio %}
   <div class="post-author">
     {% if site.github_username %}
+<<<<<<< HEAD
       <a href="{% include _i18n/i18n.html value=site.author_website %}">
+=======
+      <a href="{{ site.author_website }}">
+>>>>>>> 60afd77 (Updating Theme)
         <img class="user-picture" src="https://github.com/{{ site.github_username }}.png" alt="{{ site.author }}">
       </a>
     {% endif %}
@@ -43,7 +53,11 @@ layout: default
         <li class="user-name">
           {{ site.author }}
         </li>
+<<<<<<< HEAD
         <li class="user-shortbio">{% include _i18n/i18n.html value=site.shortbio %}</li>
+=======
+        <li class="user-shortbio">{{ site.shortbio }}</li>
+>>>>>>> 60afd77 (Updating Theme)
       </ul>
   </div>
   {% endif %}

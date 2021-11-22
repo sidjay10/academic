@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="about-col-wrapper">
+<<<<<<< HEAD
   <div class="about-col about-col-1">
 
     {% if site.github_username %}
@@ -30,6 +31,17 @@ layout: default
       </li>
       {% endif %}
     </ul>
+=======
+  
+  <div class="about-col about-col-1">
+
+    {% if site.github_username %}
+    <!-- <img class="user-picture" src="https://github.com/{{ site.github_username }}.png" alt="{{ site.author }}"> -->
+    <img class="user-picture" src="/{{ site.image }}" alt="{{ site.author }}">
+    {% endif %}
+
+    <h3>Contact Me @ </h3>
+>>>>>>> 60afd77 (Updating Theme)
 
     {% include contactlist.html %}
 
@@ -37,6 +49,18 @@ layout: default
   <article class="about-col about-col-2" itemscope itemtype="http://schema.org/BlogPosting">
 
     <h1>{{ page.title }}</h1>
+<<<<<<< HEAD
+=======
+    
+    <h3>$ <span id="txt-rotate" data-period="2000"
+        data-rotate='[
+      {% for txt in site.typing_text %} 
+        "{{txt}}"
+         {% if forloop.last %}{% else %},{% endif %}
+      {% endfor %}
+      ]'>
+      </span><span id="cursor">|</span></h3>
+>>>>>>> 60afd77 (Updating Theme)
 
     <div class="post-content" itemprop="articleBody">
       {{ content }}

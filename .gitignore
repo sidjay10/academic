@@ -10,3 +10,7 @@ _config.yml
 *.md
 !README.md
 Gemfile.lock
+<<<<<<< HEAD
+=======
+nclude-dependencies
+>>>>>>> 60afd77 (Updating Theme)

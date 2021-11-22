@@ -2,10 +2,16 @@
 layout: default
 ---
 
+<<<<<<< HEAD
 {% assign plang = page.lang | default: site.langs[0] | default: "en" %}
 <div class="msg-404">
   <div class="title">404</div>
   <div class="description">{{ site.data.academic_i18n.notfound[plang] }}</div>
+=======
+<div class="msg-404">
+  <div class="title">404</div>
+  <div class="description">{{ site.data.notfound }}</div>
+>>>>>>> 60afd77 (Updating Theme)
 </div>
 
 {{ page.content }}

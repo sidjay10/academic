@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% assign plang = page.lang | default: site.langs[0] | default: "en" %}
 <span class="contact-list-title">
   {{ site.data.academic_i18n.links[plang] }}
@@ -16,6 +17,21 @@
   {% if site.twitter_username %}
   <li>
     {% include _icons/twitter.html username=site.twitter_username %}
+=======
+<ul class="contact-list {{ include.class }}">
+
+  {% if site.email %}
+    {% for id in site.email %}
+    <li>
+      {% include _icons/email.html email=id %}
+    </li>
+    {% endfor %}
+  {% endif %}
+
+  {% if site.github_username %}
+  <li>
+    {% include _icons/github.html username=site.github_username %}
+>>>>>>> 60afd77 (Updating Theme)
   </li>
   {% endif %}
 
@@ -25,10 +41,13 @@
   </li>
   {% endif %}
 
+<<<<<<< HEAD
   {% if site.keybase_username %}
   <li>
     {% include _icons/keybase.html username=site.keybase_username %}
   </li>
   {% endif %}
+=======
+>>>>>>> 60afd77 (Updating Theme)
 
 </ul>

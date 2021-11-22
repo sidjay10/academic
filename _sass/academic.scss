@@ -2,8 +2,13 @@
 
 $type-scale-large: (
   h1: 2.941rem,
+<<<<<<< HEAD
   h2: 2.111rem,
   h3: 1.663rem,
+=======
+  h2: 2.311rem,
+  h3: 1.563rem,
+>>>>>>> 60afd77 (Updating Theme)
   h4: 1.333rem,
   p: 1.25rem,
   small: 1.15rem,
@@ -82,6 +87,10 @@ $base-font-family: "PT Serif", serif !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
+<<<<<<< HEAD
+=======
+$x-small-font-size:  $base-font-size * 0.625 !default;
+>>>>>>> 60afd77 (Updating Theme)
 
 $alt-font-family: "Open Sans", sans-serif !default;
 $alt-font-weight: bold !default;
@@ -98,10 +107,17 @@ $grey-color-lighter: lighten($grey-color, 90%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
 // Width of the content area
+<<<<<<< HEAD
 $content-width:    700px;
 
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
+=======
+$content-width:    1000px;
+
+$on-palm:          600px !default;
+$on-laptop:        1000px !default;
+>>>>>>> 60afd77 (Updating Theme)
 
 // Use media queries like this:
 // @include media-query($on-palm) {
