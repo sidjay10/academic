@@ -52,10 +52,10 @@
   {% if page.layout == "about" %} 
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="{{ "/assets/js/app.js" | prepend: site.baseurl }}"></script>
-  <!-- {% else if page.layout == "post" %}
+  {% else if page.layout == "post" %}
     {% assign i18n_posts = site.posts | where_exp:"p","p.path contains pagename" %}
   {% else %}
-    {% assign i18n_posts = site.pages | where_exp:"p","p.path contains pagename" %} -->
+    {% assign i18n_posts = site.pages | where_exp:"p","p.path contains pagename" %}
   {% endif %}
 
   {% if site.piwik %}
